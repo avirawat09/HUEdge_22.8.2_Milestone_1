@@ -1,9 +1,9 @@
 FROM python:3.10
  
-WORKDIR /app
-COPY . /app
+WORKDIR /
+COPY . /
  
 RUN pip install -r requirements.txt
  
 ENTRYPOINT ["python"]
-CMD ["app.py"]
+CMD ["app.py", "123", "testdata"]
